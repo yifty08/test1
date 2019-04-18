@@ -4,20 +4,12 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String []args){
-        Scanner sc = new Scanner(System.in);
 
-        System.out.println("How is the weather?");
-        String answer = sc.nextLine();
+        public static void main(String[] args){  //Check if String contains a sequence
+            String str_Sample = "RockStar";
 
-        if (answer.compareToIgnoreCase("rain") == 0) {
-            System.out.println("Take your umbrella!");
-        } else if (answer.equalsIgnoreCase("windy")) {
-            System.out.println("Wear your jacket!");
-        } else if (answer == "snow") {
-            System.out.println("Wear a coat and take a shovel!");
-        } else {
-            System.out.println("Enjoy your day!");
+            String test = "Tar";
+            System.out.println("Contains sequence 'tar': " + str_Sample.contains(test.compareToIgnoreCase()));
         }
-    }
+
 }
