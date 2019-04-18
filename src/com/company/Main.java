@@ -10,9 +10,9 @@ public class Main {
         System.out.println("How is the weather?");
         String answer = sc.nextLine();
 
-        if (answer.equalsIgnoreCase("rain")) {
+        if (answer.compareToIgnoreCase("rain") == 0) {
             System.out.println("Take your umbrella!");
-        } else if (answer == "windy") {
+        } else if (answer.equalsIgnoreCase("windy")) {
             System.out.println("Wear your jacket!");
         } else if (answer == "snow") {
             System.out.println("Wear a coat and take a shovel!");
